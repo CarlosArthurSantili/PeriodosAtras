@@ -1,0 +1,7 @@
+C:\Users\Carlos\source\repos\PeriodosAtras\PeriodosAtras\bin\Debug\PeriodosAtras.exe.config
+C:\Users\Carlos\source\repos\PeriodosAtras\PeriodosAtras\bin\Debug\PeriodosAtras.exe
+C:\Users\Carlos\source\repos\PeriodosAtras\PeriodosAtras\bin\Debug\PeriodosAtras.pdb
+C:\Users\Carlos\source\repos\PeriodosAtras\PeriodosAtras\obj\Debug\PeriodosAtras.csprojAssemblyReference.cache
+C:\Users\Carlos\source\repos\PeriodosAtras\PeriodosAtras\obj\Debug\PeriodosAtras.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\source\repos\PeriodosAtras\PeriodosAtras\obj\Debug\PeriodosAtras.exe
+C:\Users\Carlos\source\repos\PeriodosAtras\PeriodosAtras\obj\Debug\PeriodosAtras.pdb
