@@ -7,8 +7,49 @@ namespace PeriodosAtrasTestes
     [TestClass]
     public class PeriodosAtrasTestesClasse
     {
+
         [TestMethod]
-        public void TesteMenosQueUmDiaAtras()
+        public void TesteVinteTresHorasMinutosAtras()
+        {
+            DateTime dataTeste = new DateTime(2021, 05, 25, 14, 30, 00);
+
+            ControleData controleTeste = new ControleData(dataTeste);
+
+            Assert.AreEqual("Vinte e três horas atrás", controleTeste.CalcularPeriodosAtras());
+        }
+
+        [TestMethod]
+        public void TesteDezesseisMinutosAtras()
+        {
+            DateTime dataTeste = new DateTime(2021, 05, 26, 13, 14, 00);
+
+            ControleData controleTeste = new ControleData(dataTeste);
+
+            Assert.AreEqual("Dezesseis minutos atrás", controleTeste.CalcularPeriodosAtras());
+        }
+
+        [TestMethod]
+        public void TesteVinteDoisSegundoAtras()
+        {
+            DateTime dataTeste = new DateTime(2021, 05, 26, 13, 29, 38);
+
+            ControleData controleTeste = new ControleData(dataTeste);
+
+            Assert.AreEqual("Vinte e dois segundos atrás", controleTeste.CalcularPeriodosAtras());
+        }
+
+        [TestMethod]
+        public void TesteUmaHoraUmMinutoUmSegundoAtras()
+        {
+            DateTime dataTeste = new DateTime(2021, 05, 26, 12, 28, 59);
+
+            ControleData controleTeste = new ControleData(dataTeste);
+
+            Assert.AreEqual("Uma hora e um minuto e um segundo atrás", controleTeste.CalcularPeriodosAtras());
+        }
+
+        [TestMethod]
+        public void TesteDuasHorasTrintaMinutosAtras()
         {
             DateTime dataTeste = new DateTime(2021, 05, 26, 12, 00, 00);
 

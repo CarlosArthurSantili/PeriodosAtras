@@ -286,120 +286,144 @@ namespace PeriodosAtras
         public string IntegerParaStringPorExtensoFeminino(int numero)
         {
             string resposta = "";
+            int unidade = numero % 10;
+            int dezena = numero / 10;
 
-            switch (numero)
+            switch (dezena)
             {
-                case 0:
+                default:
                     {
                         resposta = "";
                         break;
                     }
                 case 1:
                     {
-                        resposta = "uma";
+                        if (unidade == 0)
+                            resposta = "dez";
+                        else if (unidade == 1)
+                            resposta = "onze";
+                        else if (unidade == 2)
+                            resposta = "doze";
+                        else if (unidade == 3)
+                            resposta = "treze";
+                        else if (unidade == 4)
+                            resposta = "catorze";
+                        else if (unidade == 5)
+                            resposta = "quinze";
+                        else if (unidade == 6)
+                            resposta = "dezesseis";
+                        else if (unidade == 7)
+                            resposta = "dezessete";
+                        else if (unidade == 8)
+                            resposta = "dezoito";
+                        else if (unidade == 9)
+                            resposta = "dezenove";
                         break;
                     }
                 case 2:
                     {
-                        resposta = "duas";
+                        resposta = "vinte";
                         break;
                     }
                 case 3:
                     {
-                        resposta = "três";
+                        resposta = "trinta";
                         break;
                     }
                 case 4:
                     {
-                        resposta = "quatro";
+                        resposta = "quarenta";
                         break;
                     }
                 case 5:
                     {
-                        resposta = "cinco";
+                        resposta = "cinquenta";
                         break;
                     }
                 case 6:
                     {
-                        resposta = "seis";
+                        resposta = "sessenta";
                         break;
                     }
                 case 7:
                     {
-                        resposta = "sete";
+                        resposta = "setenta";
                         break;
                     }
                 case 8:
                     {
-                        resposta = "oito";
+                        resposta = "oitenta";
                         break;
                     }
                 case 9:
                     {
-                        resposta = "nove";
-                        break;
-                    }
-                case 10:
-                    {
-                        resposta = "dez";
-                        break;
-                    }
-                case 11:
-                    {
-                        resposta = "onze";
-                        break;
-                    }
-                case 12:
-                    {
-                        resposta = "doze";
-                        break;
-                    }
-                case 13:
-                    {
-                        resposta = "treze";
-                        break;
-                    }
-                case 14:
-                    {
-                        resposta = "catorze";
-                        break;
-                    }
-                case 15:
-                    {
-                        resposta = "quinze";
-                        break;
-                    }
-                case 16:
-                    {
-                        resposta = "dezesseis";
-                        break;
-                    }
-                case 17:
-                    {
-                        resposta = "dezessete";
-                        break;
-                    }
-                case 18:
-                    {
-                        resposta = "dezoito";
-                        break;
-                    }
-                case 19:
-                    {
-                        resposta = "dezenove";
-                        break;
-                    }
-                case 20:
-                    {
-                        resposta = "vinte";
+                        resposta = "noventa";
                         break;
                     }
             }
 
+            if (dezena != 1)
+            {
+                if ((dezena != 0) && (unidade != 0))
+                    resposta += " e ";
+
+                switch (unidade)
+                {
+                    default:
+                        {
+                            resposta += "";
+                            break;
+                        }
+                    case 1:
+                        {
+                            resposta += "uma";
+                            break;
+                        }
+                    case 2:
+                        {
+                            resposta += "duas";
+                            break;
+                        }
+                    case 3:
+                        {
+                            resposta += "três";
+                            break;
+                        }
+                    case 4:
+                        {
+                            resposta += "quatro";
+                            break;
+                        }
+                    case 5:
+                        {
+                            resposta += "cinco";
+                            break;
+                        }
+                    case 6:
+                        {
+                            resposta += "seis";
+                            break;
+                        }
+                    case 7:
+                        {
+                            resposta += "sete";
+                            break;
+                        }
+                    case 8:
+                        {
+                            resposta += "oito";
+                            break;
+                        }
+                    case 9:
+                        {
+                            resposta += "nove";
+                            break;
+                        }
+                }
+            }
 
             return resposta;
         }
-
         public string RetornarStringSegundos()
         {
             int segundos = GetSegundosPassados();
